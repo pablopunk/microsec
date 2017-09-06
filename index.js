@@ -10,7 +10,8 @@ module.exports = async (req, res) => {
     return
   }
   const requestedUrl = `http:/${href}`
-  fetch(requestedUrl)
+  delete req.headers.host
+  fetch(requestedUrl, { headers: req.headers })
     .then(async fetched => {
       const body = await fetched.text()
       res.end(body)
