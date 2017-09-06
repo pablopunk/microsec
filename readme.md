@@ -1,0 +1,34 @@
+# microsec
+
+<p align="center">
+  <i>Fetch with <b>https</b> all the time</i>
+  <img src="https://github.com/pablopunk/art/raw/master/microsec/header.png"/>
+</p>
+
+## The problem
+
+Sometimes you want to fetch an insecure URL (http://insecure-url.com/?example=1) from a secure server (https://my-secure-server.com) but you get this error:
+
+```
+Mixed Content: The page at 'https://my-secure-server/' was loaded over HTTPS,
+but requested an insecure resource 'http://insecure-url.com/'.
+This request has been blocked; the content must be served over HTTPS.
+```
+
+## The solution
+
+Fetch it with _microsec.pw_!:
+
+```js
+// Javascript example
+const fetch = require('isomorphic-fetch')
+
+const url = 'https://microsec.pw/insecure-url.com/?example=1'
+fetch(url).then(/* MAGIC */)
+```
+
+## Autor
+
+| ![me](https://www.gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?s=100)|
+| -----------------------------------------------------------------------------|
+| © 2017 [__Pablo Varela__](http://pablo.life)                                 |
