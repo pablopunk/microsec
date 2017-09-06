@@ -1,6 +1,6 @@
 {
   "name": "microsec",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Fetch http pages through https",
   "main": "index.js",
   "scripts": {
