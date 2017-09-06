@@ -29,7 +29,7 @@ const url = 'https://microsec.pw/insecure-url.com/?example=1'
 fetch(url).then(/* MAGIC */)
 ```
 
-## Autor
+## Author
 
 | ![me](https://www.gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?s=100)|
 | -----------------------------------------------------------------------------|
