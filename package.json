@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
+    "dev": "micro-dev",
     "test": "standard --fix"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
     "micro": "^8.0.4"
   },
   "devDependencies": {
+    "micro-dev": "^1.2.2",
     "standard": "^10.0.3"
   }
 }

@@ -3,6 +3,7 @@ const fetch = require('isomorphic-fetch')
 const url = require('url')
 
 module.exports = async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
   const href = url.parse(req.url).href
   if (href === '/') {
     send(res, 400, 'Empty request')
