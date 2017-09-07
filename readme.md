@@ -29,6 +29,14 @@ const url = 'https://microsec.pw/insecure-url.com/?example=1'
 fetch(url).then(/* MAGIC */)
 ```
 
+### Custom headers
+
+The headers you send inside the request to _microsec.pw_ will remain intact.
+
+```js
+fetch(url, {headers: {'Accept-Language': 'es-ES,es;q=0.8,en;q=0.6,gl;q=0.4'}})
+```
+
 ## Author
 
 | ![me](https://www.gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?s=100)|
