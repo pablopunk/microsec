@@ -11,7 +11,7 @@ const setResponseHeaders = (headers, res) => {
 
 const defaultResponseHeaders = {
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': '*'
+  'Access-Control-Allow-Headers': 'Accept-Laguage, User-Agent'
 }
 
 const removeHeaderFromRequest = (req, header) => {
