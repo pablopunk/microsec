@@ -9,7 +9,7 @@
 
 ## The problem
 
-Sometimes you want to fetch an insecure URL [http://insecure-url.com/?example=1](http://insecure-url.com/?example=1) from a secure server [https://my-secure-server.com](https://my-secure-server.com) but you get this error:
+Sometimes you want to fetch an insecure URL `http://insecure-url.com/?example=1` from a secure server `https://my-secure-server.com` but you get this error:
 
 ```
 Mixed Content: The page at 'https://my-secure-server/' was loaded over HTTPS,
