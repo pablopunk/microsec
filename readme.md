@@ -7,6 +7,8 @@
   <img src="https://github.com/pablopunk/art/raw/master/microsec/header.png"/>
 </p>
 
+See [pablopunk/microfetch](https://github.com/pablopunk/microfetch) to use `fetch` directly
+
 ## The problem
 
 Sometimes you want to fetch an insecure URL `http://insecure-url.com/?example=1` from a secure server `https://my-secure-server.com` but you get this error:
