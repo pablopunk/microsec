@@ -6,17 +6,24 @@
   "scripts": {
     "start": "micro",
     "dev": "micro-dev",
-    "test": "standard --fix"
+    "test": "xo && ava"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "xo": {
+    "semicolon": false,
+    "space": true
+  },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "micro": "^8.0.4"
   },
   "devDependencies": {
+    "ava": "^0.22.0",
+    "got": "^7.1.0",
     "micro-dev": "^1.2.2",
-    "standard": "^10.0.3"
+    "test-listen": "^1.0.2",
+    "xo": "^0.18.2"
   }
 }

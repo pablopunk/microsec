@@ -1,10 +1,12 @@
+const url = require('url')
 const {send} = require('micro')
 const fetch = require('isomorphic-fetch')
-const url = require('url')
 
 const setResponseHeaders = (headers, res) => {
-  for (let h in headers) {
-    res.setHeader(h, headers[h])
+  for (const h in headers) {
+    if (Object.prototype.hasOwnProperty.call(headers, h)) {
+      res.setHeader(h, headers[h])
+    }
   }
   return res
 }
