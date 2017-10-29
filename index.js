@@ -34,6 +34,10 @@ module.exports = async (req, res) => {
 
   fetch(requestedUrl, {headers: req.headers})
     .then(async fetched => {
+      if (fetched.status === 404) {
+        send(res, 404, 'Not found')
+        return
+      }
       const body = await fetched.text()
       res.end(body)
     })
