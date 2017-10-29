@@ -1,4 +1,4 @@
-# microsec
+# microsec [![Build Status](https://travis-ci.org/pablopunk/microsec.svg?branch=master)](https://travis-ci.org/pablopunk/microsec)
 
 <p align="center">
   <i>Fetch with <b>https</b> all the time</i>
