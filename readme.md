@@ -29,7 +29,7 @@ Deploy this microservice and run it with `npm start`. Let's say you're deploy is
 // Javascript example
 const fetch = require('isomorphic-fetch')
 
-const url = 'https://secure9000/insecure-url.com/?example=1'
+const url = 'https://secure9000.pro/insecure-url.com/?example=1'
 fetch(url).then(/* MAGIC */)
 ```
 
