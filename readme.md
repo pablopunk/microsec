@@ -21,19 +21,21 @@ This request has been blocked; the content must be served over HTTPS.
 
 ## The solution
 
-Fetch it with _microsec.pw_!:
+Fetch it with _microsec_!:
+
+Deploy this microservice and run it with `npm start`. Let's say you're deploy is on this url: `https://secure9000.pro`.
 
 ```js
 // Javascript example
 const fetch = require('isomorphic-fetch')
 
-const url = 'https://microsec.pw/insecure-url.com/?example=1'
+const url = 'https://secure9000/insecure-url.com/?example=1'
 fetch(url).then(/* MAGIC */)
 ```
 
 ### Custom headers
 
-The headers you send inside the request to _microsec.pw_ will remain intact.
+The headers you send inside the request will remain intact.
 
 ```js
 fetch(url, {headers: {'Accept-Language': 'es-ES,es;q=0.8,en;q=0.6,gl;q=0.4'}})
