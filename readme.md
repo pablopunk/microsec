@@ -7,7 +7,6 @@
   <img src="https://github.com/pablopunk/art/raw/master/microsec/header.png"/>
 </p>
 
-See [pablopunk/microfetch](https://github.com/pablopunk/microfetch) to use `fetch` directly
 
 ## The problem
 
