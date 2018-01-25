@@ -1,8 +1,9 @@
-import test from 'ava'
 import micro from 'micro'
 import listen from 'test-listen'
 import {get} from 'got'
 import m from '.'
+
+const test = require('ava').serial
 
 const server = micro(m)
 
@@ -11,6 +12,7 @@ test('works with a url', async t => {
   const result = await get(`${url}/pablopunk.com`)
 
   t.is(result.statusCode, 200)
+  server.close()
 })
 
 test('returns a 400 with an empty url', async t => {
@@ -21,6 +23,7 @@ test('returns a 400 with an empty url', async t => {
     .catch(err => {
       t.is(err.statusCode, 400)
     })
+  server.close()
 })
 
 test('returns a 404 if the url is not found', async t => {
@@ -31,4 +34,5 @@ test('returns a 404 if the url is not found', async t => {
     .catch(err => {
       t.is(err.statusCode, 404)
     })
+  server.close()
 })
