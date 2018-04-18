@@ -22,7 +22,7 @@ This request has been blocked; the content must be served over HTTPS.
 
 Fetch it with _microsec_!:
 
-Deploy this microservice and run it with `npm start`. Let's say you're deploy is on this url: `https://secure9000.pro`.
+Deploy this microservice and run it with `npm start`. Let's say you're deployment is on this url: `https://secure9000.pro`.
 
 ```js
 // Javascript example
